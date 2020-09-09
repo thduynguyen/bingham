@@ -1849,7 +1849,7 @@ double **load_matrix(char *fin, int *n, int *m)
   const int buflen = CHARS_PER_FLOAT * (*m);
   char sbuf[buflen];
 
-  int i, j;
+  int i=0, j=0;
   for (i = 0; i < *n; i++) {
     s = sbuf;
     if (fgets(s, buflen, f) == NULL)
